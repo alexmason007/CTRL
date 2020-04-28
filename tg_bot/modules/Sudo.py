@@ -23,18 +23,18 @@ def addsudo(bot: Bot, update: Update, args: List[str]):
         return ""
         
     if int(user_id) == OWNER_ID:
-        message.reply_text("The specified user is my owner! No need add him to SUDO_USERS list!")
+        message.reply_text("The specified user is my Husband lol! He already have access to everything !")
         return ""
         
     if int(user_id) in SUDO_USERS:
-        message.reply_text("Buddy this user is already a sudo user.")
+        message.reply_text("He is already become my boyfriend.")
         return ""
     
     with open("sudo_users.txt","a") as file:
         file.write(str(user_id) + "\n")
     
     SUDO_USERS.append(user_id)
-    message.reply_text("Succefully Added To SUDO List!")
+    message.reply_text("He proposed me !! I'm gonna say yess!")
         
     return ""
 
@@ -49,7 +49,7 @@ def rsudo(bot: Bot, update: Update, args: List[str]):
         return ""
 
     if int(user_id) == OWNER_ID:
-        message.reply_text("The specified user is my owner! I won't remove him from SUDO_USERS list!")
+        message.reply_text("LMFAO You wanna remove my husband!")
         return ""
     
     if user_id not in SUDO_USERS:
