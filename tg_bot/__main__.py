@@ -27,11 +27,11 @@ def escape_html(word):
     return escape(word)
 
 PM_START_TEXT = """
-Hey {}, my name is **{}**! Im a group management Bot... 
+Hey {}, my name is **{}**! Im a sexy bhabhi for managing dicks in telegram groups... 
 
 Maintained by  [This guy](tg://user?id={}).
 
-Press /help for all available commands !👍
+Press /help to see if you can press my boobs now !👍
 
 """
 
@@ -268,7 +268,7 @@ def get_help(bot: Bot, update: Update):
     # ONLY send help in PM
     if chat.type != chat.PRIVATE:
 
-        update.effective_message.reply_text("Contact me in PM to get the list of possible commands.",
+        update.effective_message.reply_text("Call me in pm for nudes.",
                                             reply_markup=InlineKeyboardMarkup(
                                                 [[InlineKeyboardButton(text="Help",
                                                                        url="t.me/{}?start=help".format(
